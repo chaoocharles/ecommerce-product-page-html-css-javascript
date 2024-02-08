@@ -27,3 +27,44 @@ a {
     text-decoration: none;
     color: var(--dark-grayish-blue)
 }
+
+.container{
+    max-width: 1120px;
+    min-height: 100vh;
+    padding: 0 5px;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-first{
+    display: flex;
+    align-items: center;
+    gap: 50px
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 30px
+}
+
+.nav-second{
+    display: flex;
+    align-items: center;
+    gap: 45px
+}
+
+.logo img{
+    height: 22px;
+}
+
+.avatar img{
+    height: 50px;
+    width: 50px;
+}
