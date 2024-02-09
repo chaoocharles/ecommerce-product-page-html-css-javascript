@@ -40,24 +40,46 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 26px;
+    border-bottom: 1px solid var(--grayish-blue);
 }
 
 .nav-first{
     display: flex;
     align-items: center;
-    gap: 50px
+    gap: 50px;
+    padding-bottom: 30px;
 }
 
 .nav-links{
     display: flex;
     align-items: center;
-    gap: 30px
+    gap: 30px;
+}
+
+.nav-links a{
+    position: relative;
+}
+
+.nav-links a:hover{
+ color: var(--black);
+}
+
+.nav-links a:hover::after{
+    content: "";
+    position: absolute;
+    background-color: var(--orange);
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -47px;
 }
 
 .nav-second{
     display: flex;
     align-items: center;
-    gap: 45px
+    gap: 45px;
+    padding-bottom: 30px;
 }
 
 .logo img{
