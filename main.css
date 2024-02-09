@@ -42,6 +42,7 @@ a {
     align-items: center;
     padding-top: 26px;
     border-bottom: 1px solid var(--grayish-blue);
+    margin-bottom: 85px;
 }
 
 .nav-first{
@@ -89,4 +90,8 @@ a {
 .avatar img{
     height: 50px;
     width: 50px;
+}
+
+.add-to-cart svg path{
+   fill: red;
 }
