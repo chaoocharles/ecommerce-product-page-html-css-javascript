@@ -125,6 +125,7 @@ body{
     width: 445px;
     height: 445px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .gallery .thumb-list{
