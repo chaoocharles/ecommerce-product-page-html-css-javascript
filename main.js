@@ -1,13 +1,21 @@
-var mainImages = document.querySelectorAll('.main-img img');
-var thumbnails = document.querySelectorAll('.thumb-list div');
+let mainImages = document.querySelectorAll('.default .main-img img');
+let thumbnails = document.querySelectorAll('.default .thumb-list div');
+let lightboxMainImages = document.querySelectorAll('.lightbox .main-img img');
+let lightboxThumbnails = document.querySelectorAll('.lightbox .thumb-list div');
 
 thumbnails.forEach((thumb, index) => {
     thumb.addEventListener('click', () =>{
-        changeImage(index)
+        changeImage(index, mainImages, thumbnails)
     })
 })
 
-const changeImage = (index) => {
+lightboxThumbnails.forEach((thumb, index) => {
+    thumb.addEventListener('click', () =>{
+        changeImage(index, lightboxMainImages, lightboxThumbnails)
+    })
+})
+
+const changeImage = (index, mainImages, thumbnails) => {
     mainImages.forEach((img) => {
       img.classList.remove('active');
     });
