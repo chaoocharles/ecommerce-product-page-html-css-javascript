@@ -40,11 +40,15 @@
                 src="images/icon-cart.svg"
                 alt="cart icon"
               />
-              <div class="cart-items active">
+              <div class="cart-container">
                 <div class="cart-title">Cart</div>
-                <div class="items-list empty">
-                  <p>Your cart is empty</p>
+                <div class="cart-items empty">
+                  <p class="cart-empty">Your cart is empty</p>
                 </div>
+                <button class="checkout empty">Checkout</button>
+              </div>
+              <div class="cart-count">
+                <span class="qty">0</span>
               </div>
             </div>
             <div class="avatar">
@@ -171,8 +175,8 @@
 
         <div class="content">
           <h3>SNEAKER COMPANY</h3>
-          <h2>Fall Limited Edition Sneakers</h2>
-          <p>
+          <h2 class="product-name">Fall Limited Edition Sneakers</h2>
+          <p class="product-desc">
             These low-profile sneakers are your perfect casual wear companion.
             Featuring a durable rubber outer sole, they’ll withstand everything
             the weather can offer.
