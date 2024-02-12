@@ -333,3 +333,48 @@ body {
 .add-to-cart svg path {
   fill: var(--white);
 }
+
+/* Cart */
+.cart {
+  position: relative;
+}
+
+.cart-icon {
+  cursor: pointer;
+}
+
+.cart-items {
+  right: -140px;
+  top: 50px;
+  z-index: 9;
+  position: absolute;
+  width: 360px;
+  min-height: 260px;
+  background: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: none;
+}
+
+.cart-items.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-title {
+  padding: 25px 20px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--grayish-blue);
+}
+
+.cart .items-list {
+  padding: 25px 20px;
+}
+
+.cart .items-list.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 185px;
+  font-weight: 700;
+  color: var(--grayish-blue);
+}

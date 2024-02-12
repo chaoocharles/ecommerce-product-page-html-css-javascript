@@ -1,6 +1,8 @@
-let countEl = document.querySelector(".count");
-let minus = document.querySelector(".minus");
-let plus = document.querySelector(".plus");
+const countEl = document.querySelector(".count");
+const minus = document.querySelector(".minus");
+const plus = document.querySelector(".plus");
+const cartIcon = document.querySelector(".cart-icon");
+const cartItems = document.querySelector(".cart-items");
 
 let count = 0;
 
@@ -17,4 +19,8 @@ minus.addEventListener("click", () => {
 
 plus.addEventListener("click", () => {
   updateCount(count + 1);
+});
+
+cartIcon.addEventListener("click", () => {
+  cartItems.classList.toggle("active");
 });

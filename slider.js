@@ -1,11 +1,13 @@
-let mainImages = document.querySelectorAll(".default .main-img img");
-let thumbnails = document.querySelectorAll(".default .thumb-list div");
-let lightboxMainImages = document.querySelectorAll(".lightbox .main-img img");
-let lightboxThumbnails = document.querySelectorAll(".lightbox .thumb-list div");
-let lightbox = document.querySelector(".lightbox");
-let iconClose = document.querySelector(".icon-close");
-let iconPrev = document.querySelector(".icon-prev");
-let iconNext = document.querySelector(".icon-next");
+const mainImages = document.querySelectorAll(".default .main-img img");
+const thumbnails = document.querySelectorAll(".default .thumb-list div");
+const lightboxMainImages = document.querySelectorAll(".lightbox .main-img img");
+const lightboxThumbnails = document.querySelectorAll(
+  ".lightbox .thumb-list div"
+);
+const lightbox = document.querySelector(".lightbox");
+const iconClose = document.querySelector(".icon-close");
+const iconPrev = document.querySelector(".icon-prev");
+const iconNext = document.querySelector(".icon-next");
 
 let currentImageIndex = 0;
 
