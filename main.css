@@ -122,8 +122,10 @@ body {
 
 .gallery .main-img img.active {
   display: inline-block;
-  width: 445px;
-  height: 445px;
+  max-width: 445px;
+  max-height: 445px;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -132,11 +134,13 @@ body {
   display: flex;
   justify-content: space-between;
   max-width: 445px;
+  width: 100%;
 }
 
 .gallery .thumb-list div {
-  width: 90px;
-  height: 90px;
+  max-width: 90px;
+  max-height: 90px;
+  margin: 0 2px;
 }
 
 .gallery .thumb-list img {
@@ -157,6 +161,7 @@ body {
 .gallery .thumb-list .active {
   border: 2px solid var(--orange);
   border-radius: 13px;
+  margin: 0;
 }
 
 /* lightbox */
@@ -328,6 +333,7 @@ body {
   align-items: center;
   gap: 15px;
   cursor: pointer;
+  padding: 0 5px;
 }
 
 .add-to-cart svg path {
@@ -344,7 +350,7 @@ body {
 }
 
 .cart-container {
-  right: -140px;
+  right: -95px;
   top: 50px;
   z-index: 9;
   position: absolute;
@@ -424,6 +430,10 @@ body {
   font-weight: 700;
 }
 
+.checkout:hover {
+  cursor: pointer;
+}
+
 .cart-count {
   cursor: pointer;
   position: absolute;
@@ -439,4 +449,18 @@ body {
   justify-content: center;
   font-size: 12px;
   font-weight: 700;
+}
+
+.delete-item {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Mobile */
+
+@media (max-width: 755px) {
+  body {
+    background-color: red;
+  }
 }

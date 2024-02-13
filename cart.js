@@ -103,7 +103,7 @@ const removeItemFromCart = (cartItem) => {
   cartItem.remove();
   updateTotalCartQty();
 
-  if (!cartItems.classList.contains("empty")) {
+  if (cartItems.children.length === 1) {
     cartItems.classList.add("empty");
     checkout.classList.add("empty");
   }
