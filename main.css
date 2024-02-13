@@ -473,8 +473,15 @@ body {
 /* Mobile */
 
 @media (max-width: 755px) {
-  .nav-first {
-    gap: 20px;
+  .navbar {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .nav-first,
+  .nav-second {
+    gap: 30px;
+    padding-bottom: 10px;
   }
 
   .nav-first .menu-icon {
@@ -525,5 +532,49 @@ body {
 
   .nav-links.active a:hover::after {
     bottom: -5px;
+  }
+
+  /* main */
+
+  .main {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .main .default {
+    display: none;
+  }
+
+  .lightbox {
+    display: flex;
+    position: relative;
+    height: auto;
+    width: auto;
+    background: none;
+  }
+
+  .main .thumb-list {
+    display: none;
+  }
+
+  .main .icon-prev {
+    left: 50px;
+    height: 45px;
+    width: 45px;
+  }
+
+  .main .icon-next {
+    right: 50px;
+    height: 45px;
+    width: 45px;
+  }
+
+  .gallery .main-img img.active {
+    max-width: none;
+    max-height: none;
+    width: 100vw;
+    height: auto;
+    border-radius: 0;
   }
 }
