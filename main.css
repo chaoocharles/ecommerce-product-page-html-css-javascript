@@ -577,4 +577,42 @@ body {
     height: auto;
     border-radius: 0;
   }
+
+  .content {
+    padding: 0 20px;
+  }
+
+  .content h2 {
+    margin: 10px 0;
+    font-size: 30px;
+  }
+
+  .price-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .prev-price {
+    margin: 0;
+  }
+
+  .add-to-cart-container {
+    flex-direction: column;
+  }
+
+  .counter {
+    width: 100%;
+  }
+
+  .counter button {
+    width: 40%;
+  }
+
+  .cart-container {
+    z-index: 20;
+    right: -85px;
+    top: 40px;
+  }
 }
